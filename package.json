@@ -1,0 +1,38 @@
+{
+  "name": "storeSearch",
+  "version": "1.0.0",
+  "description": "An API that store searches into the database.",
+  "main": "./compiledJS/index.js",
+  "scripts": {
+    "start": "node && nodemon ./compiledJS/index.js",
+    "server": "node && nodemon ./compiledJS/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.4"
+  },
+  "keywords": [],
+  "author": "Sinethemba Dlova",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/express": "^4.0.37",
+    "@types/express-handlebars": "0.0.29",
+    "@types/express-session": "^1.15.3",
+    "@types/mongoose": "^4.7.24",
+    "@types/morgan": "^1.7.35",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-flash": "git://github.com/RGBboy/express-flash.git",
+    "express-handlebars": "^3.0.0",
+    "express-mongoose": "^0.1.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
+    "typescript": "^2.5.3"
+  }
+}

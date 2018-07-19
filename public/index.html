@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Handle bars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+</head>
+
+<body>
+        <script type="text/handlebars-x" id="searchTemplate">
+            <h6><strong>A list of all searches from the most to least searched.</strong></h6>
+            <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">Search</th>
+                        <th scope="col">Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {{#each search}}
+                      <tr>
+                        <td>{{search}}</td>
+                        <td>{{time}}</td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+            
+        </script>
+    <!--Nav bar starts  -->
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top mb-5">
+        <div class="container">
+            <a class="navbar-brand mr-0" href="/">Store Search</a>
+        </div>
+    </nav>
+    <!--Nav bar ends.  -->
+
+    <div class="container text-center">
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+    
+                    <div class="input-group centre-block">
+                        <input type="text" id="inputBox" class="form-control text-center" name="takeSearch" placeholder="How can we help you?">
+                        <span class="input-group-btn">
+                            <button id="button" class="btn btn-primary" type="submit">Search</button>
+                        </span>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                            The field is empty, please enter a search.
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+          <hr>
+        <!-- /line-->
+        
+        <div class="container">
+            <div class="tableDiv">
+            
+            </div>
+         </div>
+        </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

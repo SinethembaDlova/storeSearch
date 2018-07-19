@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "outDir": "./compiledJS",
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "sourceMap": true
+    },
+    "files": [
+        "index.ts",
+        "server.ts",
+        "models/storeSearchDB.ts",
+        "routes/searchRoute.ts",
+        "routes/filterRoute.ts"
+    ]
+}
